@@ -1,0 +1,148 @@
+<!DOCTYPE=HTML>
+<html lang="en">
+ <head>
+   <link rel="stylesheet" href="styles.css">
+ </head>
+
+<header>
+<h1 id="title">
+  BookClub Survey Form </h1>
+<p id="description">Thank you for taking the time to help us improve the club </p>
+</header>
+
+<body>
+<div id="container">
+<div class="survey-form">
+<form id="survey-form" action="submit">
+
+<!--name-->
+<div class="qa">
+<div class="question">
+  <label for="name-label" id="name-label">Name :</label></div>
+
+<div class="textarea"><input  class="answer" id="name" type="text" placeholder="Enter your name" required/></div>
+</div>
+
+<!--email-->
+<div class="qa">
+<div class="question" >
+  <label for="email-label" id="email-label">Email :</label></div>
+
+<div><input class="answer" id="email" type="email" placeholder="Enter your email"  required/> 
+</div>
+
+<!--age-->
+<div class="qa">
+<div class="question">
+  <label for="number-label" id="number-label">Age :</label></div>
+
+<div><input class="answer" id="number" min="0" max="100"type="number" placeholder="Enter your age" required/>
+</div>
+
+
+<div class="space"></div>
+
+<!--how you hear about us-->
+<div class="qa">
+<div class="question">
+  <div><label for="dropdown">How did you hear about us?</div>
+          <select id="dropdown" name="dropdown">
+            <option value="choose">(select one)</option>
+            <option value="Instagram">Instagran</option>
+            <option value="Facebook Page">Facebook Page</option>
+            <option value="Friend">Friends</option>
+            <option value="Other">Other</option>
+          </select>
+        </label>
+          
+</div>
+
+<!--member type-->
+<div class="qa">
+  <div class="question">
+    <label for="new join">Which type of member are you?</label>
+    </div>
+
+<div>
+    <input type="radio" name="member-type"  value="new join"/> New Join</div>
+    
+    <input type="radio" name="member-type"  value="club member"/> Club Member 
+    </div>
+
+
+<!--enjoy the session??-->
+
+<div class="qa">
+  <div  class="question" >
+    <label for="rating">How much do you enjoy the session ?</label>
+    </div>
+
+
+  <label for="fivestar" class="answerlist">
+    <input id="fivestar" type="radio" name="rate" class="inline" value="fivestar" />
+     5
+    </label>
+
+  <label for="fourstar" class="answerlist">
+    <input id="fourstar" type="radio" name="rate" class="inline" value="fourstar"/>
+    4
+    </label>
+
+  <label for="threestar" class="answerlist">
+    <input id="threestar" type="radio" name="rate" class="inline" value="threestar"/>
+    3
+    </label>
+ 
+  <label for="twostar" class="answerlist">
+    <input id="twostar" type="radio" name="rate" class="inline" value="twostar"/>
+    2
+    </label>
+
+  <label for="onestar" class="answerlist"><input id="onestar" type="radio" name="rate" class="inline" value="onestar" />
+  1
+  </label>
+
+</div>
+ 
+<!--feedback-->
+
+<div class="qa">
+  <div  class="question" >
+    <label>What do you like about the event ?</label>
+    </div>
+
+ <label for="feedback1" class="answerlist">
+          <input id="feedback1" type="checkbox"  name="terms-and-conditions" class="inline" value="books" /> 
+          books</a>
+  </label>
+
+ <label for="feedback2" class="answerlist">      
+          <input id="feedback2" type="checkbox"  name="terms-and-conditions" class="inline" value="location" />
+          location</a>
+  </label>
+
+ <label for="feedback3" class="answerlist">
+          <input id="feedback3" type="checkbox"  name="terms-and-conditions" class="inline" value="moderator" />      
+          moderator</a>
+          </label>
+
+ <label for="feedback4" class="answerlist">
+          <input id="feedback4" type="checkbox"  name="terms-and-conditions" class="inline" value="topic" /> 
+          discussion topic</a>
+        </label>
+
+
+<!--suggestion-->
+<div class="question">
+ <label for="suggestion">Any suggestion:</div>
+ 
+          <textarea id="suggestion" name="suggestion" rows="3" cols="60" placeholder="It would be better if..."></textarea>
+        </label>
+ </div>   
+    
+    <div class="submit"><label for="survey-form"><input id="submit" type="Submit" value="Submit" /></label></div>
+    
+</form>
+</body>
+</html>
+
